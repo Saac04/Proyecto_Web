@@ -1,0 +1,95 @@
+/* Importar la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Guides&display=swap');
+
+/* Aplicar la fuente base al body */
+body {
+    font-family: 'Playwrite ES Guides', serif;
+    font-weight: 400; /* Peso normal para el texto general */
+    font-style: normal;
+    line-height: 1.6; /* Mejor legibilidad */
+    color: #333; /* Color de texto principal */
+}
+
+/* Estilos para los encabezados */
+h1 {
+    font-size: 2.5rem; /* 40px */
+    font-weight: 700; /* Negrita */
+    margin-bottom: 1rem; /* Espaciado inferior */
+    color: #000; /* Color oscuro para títulos */
+}
+
+h2 {
+    font-size: 2rem; /* 32px */
+    font-weight: 600; /* Semi-negrita */
+    margin-bottom: 0.875rem;
+    color: #222;
+}
+
+h3 {
+    font-size: 1.75rem; /* 28px */
+    font-weight: 500; /* Medio */
+    margin-bottom: 0.75rem;
+    color: #444;
+}
+
+h4 {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 500;
+    margin-bottom: 0.625rem;
+    color: #555;
+}
+
+h5 {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+h6 {
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: #777;
+}
+
+/* Estilos para párrafos */
+p {
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Estilos para enlaces */
+a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #007BFF; /* Azul estándar para enlaces */
+    text-decoration: none; /* Sin subrayado por defecto */
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+    color: #0056b3; /* Azul más oscuro al hacer hover */
+}
+
+/* Estilos para listas */
+ul, ol {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Estilos para texto en negrita y cursiva */
+strong {
+    font-weight: 700; /* Negrita */
+}
+
+em {
+    font-style: italic; /* Cursiva */
+}
