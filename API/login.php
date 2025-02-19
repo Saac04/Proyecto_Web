@@ -1,11 +1,11 @@
 <?php
 header("Content-Type: application/json");
-require "db.php"; // Importamos la conexión a la BD
+require "db.php"; // Importamos la conexión a la base de datos
 
 $data = json_decode(file_get_contents("php://input"), true);
 
 if (!isset($data["nombre_usuario"]) || !isset($data["contraseña"])) {
-    echo json_encode(["error" => "Faltan datos"]);
+    echo json_encode(["error" => "Por favor, ingresa tu nombre de usuario y contraseña."]);
     exit;
 }
 
@@ -17,12 +17,16 @@ try {
     $stmt->execute([$nombre_usuario]);
     $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($usuario && $contraseña === $usuario["contraseña"]) { // Aquí luego usaremos password_verify()
-        echo json_encode(["success" => "Login exitoso", "user_id" => $usuario["id"]]);
+    if ($usuario) {
+        if ($contraseña === $usuario["contraseña"]) { // Aquí luego usaremos password_verify()
+            echo json_encode(["success" => "¡Bienvenido de nuevo! Has iniciado sesión exitosamente.", "user_id" => $usuario["id"]]);
+        } else {
+            echo json_encode(["error" => "La contraseña que ingresaste es incorrecta. Por favor, intenta nuevamente."]);
+        }
     } else {
-        echo json_encode(["error" => "Usuario o contraseña incorrectos"]);
+        echo json_encode(["error" => "El nombre de usuario no existe. ¿Olvidaste tu contraseña?"]);
     }
 } catch (Exception $e) {
-    echo json_encode(["error" => $e->getMessage()]);
+    echo json_encode(["error" => "Hubo un problema al procesar tu solicitud. Intenta de nuevo más tarde."]);
 }
 ?>

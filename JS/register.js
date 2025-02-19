@@ -1,13 +1,14 @@
-document.getElementById("loginForm").addEventListener("submit", async function (e) {
+document.getElementById("registerForm").addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const nombre_usuario = document.getElementById("username").value;
+    const email = document.getElementById("email").value;
     const contraseña = document.getElementById("password").value;
 
-    const response = await fetch("API/login.php", {
+    const response = await fetch("API/register.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ nombre_usuario, contraseña })
+        body: JSON.stringify({ nombre_usuario, email, contraseña })
     });
 
     const data = await response.json();
