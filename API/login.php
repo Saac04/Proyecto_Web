@@ -21,10 +21,10 @@ try {
         if ($contraseña === $usuario["contraseña"]) { // Aquí luego usaremos password_verify()
             echo json_encode(["success" => "¡Bienvenido de nuevo! Has iniciado sesión exitosamente.", "user_id" => $usuario["id"]]);
         } else {
-            echo json_encode(["error" => "La contraseña que ingresaste es incorrecta. Por favor, intenta nuevamente."]);
+            echo json_encode(["error" => "La contraseña que ingresaste ta mal. Por favor, deja de tener sida."]);
         }
     } else {
-        echo json_encode(["error" => "El nombre de usuario no existe. ¿Olvidaste tu contraseña?"]);
+        echo json_encode(["error" => "El nombre de usuario no existe. ¿Bro y si registras?"]);
     }
 } catch (Exception $e) {
     echo json_encode(["error" => "Hubo un problema al procesar tu solicitud. Intenta de nuevo más tarde."]);

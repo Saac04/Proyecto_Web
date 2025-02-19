@@ -4,19 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+  <link rel="stylesheet" href="css/Base.css">
+  <link rel="stylesheet" href="css/Fuente.css">
+  <link rel="stylesheet" href="css/Botones.css">
+  <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
 <h2>Iniciar Sesión</h2>
 <form id="loginForm">
   <input type="text" id="username" placeholder="Usuario" required>
   <input type="password" id="password" placeholder="Contraseña" required>
-  <button type="submit">Entrar</button>
+  <button type="submit" class="btn-primary">Entrar</button>
 </form>
 
-<a href="register.html"> Registrate</a>
+<a href="register.html">
+  <button class="btn-secondary">Registrate</button>
+</a>
 
 <!-- Aquí se mostrará el mensaje de error o éxito -->
-<div id="message" style="margin-top: 10px; font-size: 14px;"></div>
+<p id="message"></p>
 
 <script src="JS/login.js"></script>
 </body>

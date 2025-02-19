@@ -1,0 +1,25 @@
+/* index.css */
+
+/* Centrando el contenido en la página */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Espaciado entre los elementos */
+h1, h2, h3, h4, h5 {
+    margin: 5px 0;
+}
+
+/* Mantener el botón correctamente alineado */
+a {
+    display: block;
+    margin-top: 15px;
+}

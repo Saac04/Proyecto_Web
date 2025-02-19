@@ -1,0 +1,44 @@
+/* login.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    width: min(300px, 80vw);
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+#loginForm input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#loginForm button {
+    padding: 10px;
+}
+
+a button {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+#message {
+    text-align: center;
+    margin-top: 20px;
+}
