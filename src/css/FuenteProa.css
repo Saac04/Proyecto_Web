@@ -11,7 +11,7 @@ body {
 
 /* Estilos para encabezados */
 h1, h2 {
-    font-family: 'Lora', serif;
+    font-family: 'Lato', serif;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -21,12 +21,11 @@ h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
-h1 { font-size: 90px; color: #000; }
-h2 { font-size: 35px; color: #000; }
-h3 { font-size: 28px; font-weight: 700; color: #000; }
-h4 { font-size: 24px; font-weight: 400; color: #000; }
-h5 { font-size: 22px; font-weight: 400; color: #000; }
-h6 { font-size: 18px; font-weight: 400; line-height: 1.2; color: #000; }
+h1 { font-size: 30px; color: #000; }
+h2 { font-size: 25px; color: #000; }
+h3 { font-size: 20px; font-weight: 700; color: #000; }
+h4 { font-size: 18px; font-weight: 400; color: #000; }
+h5 { font-size: 16px; font-weight: 400; color: #000; }
 
 /* Estilos para texto */
 p, ul, ol, li, a, strong, em {
@@ -56,35 +55,12 @@ a:hover, a:focus {
 @media (max-width: 767px) {
     body { font-size: 14px; line-height: 1.5; }
 
-    h1 { font-size: 34px; }
-    h2 { font-size: 22px; }
+    h1 { font-size: 23px; }
+    h2 { font-size: 20px; }
     h3 { font-size: 18px; }
     h4 { font-size: 16px; }
     h5 { font-size: 14px; }
-    h6 { font-size: 14px; }
 
     p { font-size: 0.875rem; }
     ul, ol { padding-left: 1rem; }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-    body { font-size: 16px; }
-
-    h1 { font-size: 60px; }
-    h2 { font-size: 30px; }
-    h3 { font-size: 24px; }
-    h4 { font-size: 20px; }
-    h5 { font-size: 18px; }
-    h6 { font-size: 16px; }
-}
-
-@media (min-width: 1024px) {
-    body { font-size: 18px; }
-
-    h1 { font-size: 90px; }
-    h2 { font-size: 35px; }
-    h3 { font-size: 28px; }
-    h4 { font-size: 24px; }
-    h5 { font-size: 22px; }
-    h6 { font-size: 18px; }
 }

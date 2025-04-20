@@ -51,20 +51,21 @@ button {
 
 /* Botón primario */
 .btn-primary {
-    background: #A03A6F;
+    background: #459CFF;
     color: #ffffff;
-    border: solid 2px #A03A6F;
+    border: solid 2px #459CFF;
 }
 
 .btn-primary:hover {
     background: #ffffff;
-    color: #A03A6F;
+    color: #459CFF;
 }
 
 /* Botón secundario */
 .btn-secondary {
-    background: #459CFF;
-    color: #fff;
+    background: #fff;
+    color: #000;
+    border: 1px dotted lightgray;
 }
 
 .btn-secondary:hover {
@@ -74,7 +75,35 @@ button {
 }
 
 /* Select */
-select {
+.select-primary {
+    appearance: none;       /* Estilo neutral */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding: 1px 5px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    background-color: #459CFF;
+
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L10 8L18 2' stroke='%23FFFFFF' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    width: 100%;
+}
+.option-primary {
+    padding: 1px 5px;
+    font-size: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+.select-secondary {
     appearance: none;       /* Estilo neutral */
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -85,20 +114,16 @@ select {
     font-size: 14px;
     color: #000000;
     font-family: 'Lato', sans-serif;
-    outline: none;
+    background-color: #459CFF;
 
     position: relative;
-    background-image: url("data:image/svg+xml,%3Csvg width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L10 8L18 2' stroke='%23CCCCCC' stroke-width='2'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='25' height='10' viewBox='0 0 25 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L10 8L18 2' stroke='%23FFFFFF' stroke-width='2'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 20px;
     width: 100%;
 }
-
-select:focus {
-    border: 2px solid gray;
-}
-option {
+.option-secondary {
     padding: 1px 5px;
     font-size: 14px;
     color: #000000;
@@ -109,7 +134,7 @@ option {
 /* Checkbox y radio buttons */
 input[type="checkbox"],
 input[type="radio"] {
-    accent-color: #A03A6F;
+    accent-color: #459cff;
     width: 18px;
     height: 18px;
     cursor: pointer;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo de Inputs</title>
+  <link rel="stylesheet" href="css/Fuentes.css">
+  <link rel="stylesheet" href="css/Botones.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<main style="max-width: 600px; margin: 2rem auto; padding: 1rem;">
+  <h1>Demo de Inputs</h1>
+
+  <form>
+    <!-- Text Inputs -->
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" placeholder="ejemplo@correo.com">
+
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" placeholder="••••••••">
+
+    <!-- Textarea -->
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" rows="4" placeholder="Escribe un mensaje..."></textarea>
+
+    <!-- Select -->
+    <label for="opcion">Selecciona una opción:</label>
+    <select id="opcion">
+      <option value="">-- Elige una --</option>
+      <option value="opcion1">Opción 1</option>
+      <option value="opcion2">Opción 2</option>
+      <option value="opcion3">Opción 3</option>
+    </select>
+
+    <!-- Checkbox -->
+    <label>
+      <input type="checkbox" id="acepto">
+      Acepto los términos y condiciones
+    </label>
+
+    <!-- Radio buttons -->
+    <p>Género:</p>
+    <label><input type="radio" name="genero" value="masculino"> Masculino</label><br>
+    <label><input type="radio" name="genero" value="femenino"> Femenino</label><br>
+    <label><input type="radio" name="genero" value="otro"> Otro</label>
+
+    <!-- Botones -->
+    <div style="margin-top: 2rem;">
+      <button type="submit" class="btn-primary">Enviar</button>
+      <button type="reset" class="btn-secondary">Limpiar</button>
+    </div>
+  </form>
+</main>
+</body>
+</html>
